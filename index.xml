@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My electronic notebook</title>
-    <link>//mfz.github.io/</link>
+    <link>https://mfz.github.io/</link>
     <description>Recent content on My electronic notebook</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="//mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>//mfz.github.io/pages/about/</link>
+      <link>https://mfz.github.io/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>//mfz.github.io/pages/about/</guid>
+      <guid>https://mfz.github.io/pages/about/</guid>
       <description>Some notes. Possibly useful.</description>
     </item>
     
     <item>
       <title>Replicating a conda environment in singularity</title>
-      <link>//mfz.github.io/articles/replicating_conda_environment_singularity/</link>
+      <link>https://mfz.github.io/articles/replicating_conda_environment_singularity/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>//mfz.github.io/articles/replicating_conda_environment_singularity/</guid>
+      <guid>https://mfz.github.io/articles/replicating_conda_environment_singularity/</guid>
       <description>&lt;p&gt;How to replicate a conda environment in a singularity container,
 and automatically activate the environment on startup.&lt;/p&gt;</description>
     </item>
