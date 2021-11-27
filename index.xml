@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My electronic notebook</title>
+    <title>mfz.github.io</title>
     <link>https://mfz.github.io/</link>
-    <description>Recent content on My electronic notebook</description>
+    <description>Recent content on mfz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 25 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://mfz.github.io/pages/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>Pasting image from clipboard into org-mode</title>
+      <link>https://mfz.github.io/articles/pasting_image_into_org-mode/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mfz.github.io/pages/about/</guid>
-      <description>Some notes. Possibly useful.</description>
+      <guid>https://mfz.github.io/articles/pasting_image_into_org-mode/</guid>
+      <description>&lt;p&gt;How to paste an image from the clipboard into an Emacs org-mode
+buffer. Requires `xclip` to be installed.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on My electronic notebook</title>
+    <title>Tags on mfz.github.io</title>
     <link>https://mfz.github.io/tags/</link>
-    <description>Recent content in Tags on My electronic notebook</description>
+    <description>Recent content in Tags on mfz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://mfz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>emacs</title>
+      <link>https://mfz.github.io/tags/emacs/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfz.github.io/tags/emacs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>orgmode</title>
+      <link>https://mfz.github.io/tags/orgmode/</link>
+      <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfz.github.io/tags/orgmode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>singularity</title>
+      <link>https://mfz.github.io/tags/singularity/</link>
+      <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfz.github.io/tags/singularity/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
