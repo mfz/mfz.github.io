@@ -9,20 +9,20 @@
     <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Pasting image from clipboard into org-mode</title>
-      <link>https://mfz.github.io/articles/pasting_image_into_org-mode/</link>
+      <link>https://mfz.github.io/posts/pasting_image_into_org-mode/</link>
       <pubDate>Sat, 27 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mfz.github.io/articles/pasting_image_into_org-mode/</guid>
+      <guid>https://mfz.github.io/posts/pasting_image_into_org-mode/</guid>
       <description>&lt;p&gt;How to paste an image from the clipboard into an Emacs org-mode
 buffer. Requires `xclip` to be installed.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Replicating a conda environment in singularity</title>
-      <link>https://mfz.github.io/articles/replicating_conda_environment_singularity/</link>
+      <link>https://mfz.github.io/posts/replicating_conda_environment_singularity/</link>
       <pubDate>Thu, 25 Nov 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://mfz.github.io/articles/replicating_conda_environment_singularity/</guid>
+      <guid>https://mfz.github.io/posts/replicating_conda_environment_singularity/</guid>
       <description>&lt;p&gt;How to replicate a conda environment in a singularity container,
 and automatically activate the environment on startup.&lt;/p&gt;</description>
     </item>
