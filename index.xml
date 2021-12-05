@@ -6,7 +6,17 @@
     <description>Recent content on mfz.github.io</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Nov 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Use iMac bluetooth keyboard and mouse in Ubuntu</title>
+      <link>https://mfz.github.io/posts/bluetooth_keyboard_and_mouse_in_ubuntu/</link>
+      <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfz.github.io/posts/bluetooth_keyboard_and_mouse_in_ubuntu/</guid>
+      <description>&lt;p&gt;How to use an iMac&amp;rsquo;s bluetooth keyboard and mouse after wiping out
+MacOS and setting up Ubuntu.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Pasting image from clipboard into org-mode</title>
       <link>https://mfz.github.io/posts/pasting_image_into_org-mode/</link>
