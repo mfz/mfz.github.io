@@ -8,13 +8,23 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://mfz.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Use iMac bluetooth keyboard and mouse in Ubuntu</title>
+      <title>Using iMac bluetooth keyboard and mouse in Ubuntu (20.04 LTS)</title>
       <link>https://mfz.github.io/posts/bluetooth_keyboard_and_mouse_in_ubuntu/</link>
       <pubDate>Sun, 05 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://mfz.github.io/posts/bluetooth_keyboard_and_mouse_in_ubuntu/</guid>
       <description>&lt;p&gt;How to use an iMac&amp;rsquo;s bluetooth keyboard and mouse after wiping out
 MacOS and setting up Ubuntu.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Installing Ubuntu 20.04 LTS on iMac with safe graphics</title>
+      <link>https://mfz.github.io/posts/ubuntu_on_imac_safe_graphics/</link>
+      <pubDate>Wed, 01 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://mfz.github.io/posts/ubuntu_on_imac_safe_graphics/</guid>
+      <description>&lt;p&gt;Problem: On iMac 2009, Ubuntu 20.04 can boot from USB in safe
+graphics mode, but after installation it only shows black screen&lt;/p&gt;</description>
     </item>
     
     <item>
