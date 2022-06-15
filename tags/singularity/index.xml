@@ -13,8 +13,11 @@
       <pubDate>Wed, 15 Jun 2022 00:00:00 +0000</pubDate>
       
       <guid>https://mfz.github.io/posts/logging_into_singularity_using_ssh/</guid>
-      <description>&lt;p&gt;Sometimes we want to connect into a singularity instance using ssh.
-The way to achieve this is to install a sshd within the container,
+      <description>&lt;p&gt;Sometimes we want to connect into a singularity instance using
+ssh. For example, when setting up a pseudo-distributed
+environment, Hadoop tries to ssh into the pseudo nodes to start up
+the services.&lt;/p&gt;
+&lt;p&gt;The way to achieve this is to install a sshd within the container,
 and specify a different port than 22 (as this is used by the host).&lt;/p&gt;</description>
     </item>
     

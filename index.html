@@ -88,8 +88,11 @@ if (!doNotTrack) {
 					<a class="title" href="/posts/logging_into_singularity_using_ssh/">Logging into singularity instance using ssh</a> &mdash;
 					<span class="description">
 						
-						<p>Sometimes we want to connect into a singularity instance using ssh.
-The way to achieve this is to install a sshd within the container,
+						<p>Sometimes we want to connect into a singularity instance using
+ssh. For example, when setting up a pseudo-distributed
+environment, Hadoop tries to ssh into the pseudo nodes to start up
+the services.</p>
+<p>The way to achieve this is to install a sshd within the container,
 and specify a different port than 22 (as this is used by the host).</p>&hellip;
 						
 					</span>
