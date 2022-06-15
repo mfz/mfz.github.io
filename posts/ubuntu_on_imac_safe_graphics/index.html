@@ -86,12 +86,12 @@ graphics mode, but after installation it only shows black screen</p>
 <p>To fix, this, one has to change the configuration of the grub
 bootloader on disk</p>
 <p>Start Ubuntu in safe graphics mode from USB, then mount the disk</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">sudo mount /dev/sda2 /mnt
-sudo mount --bind /dev /mnt/dev
-sudo mount --bind /proc /mnt/proc
-sudo mount --bind /sys /mnt/sys
-sudo chroot /mnt
-</code></pre></div><p>Then edit `/etc/default/grub` using nano</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>sudo mount /dev/sda2 /mnt
+</span></span><span style="display:flex;"><span>sudo mount --bind /dev /mnt/dev
+</span></span><span style="display:flex;"><span>sudo mount --bind /proc /mnt/proc
+</span></span><span style="display:flex;"><span>sudo mount --bind /sys /mnt/sys
+</span></span><span style="display:flex;"><span>sudo chroot /mnt
+</span></span></code></pre></div><p>Then edit `/etc/default/grub` using nano</p>
 <p>Modify</p>
 <blockquote>
 <p>GRUB_CMDLINE_LINUX=&quot;&quot;</p>
@@ -101,8 +101,8 @@ sudo chroot /mnt
 <p>GRUB_CMDLINE_LINUX=&ldquo;nomodeset&rdquo;</p>
 </blockquote>
 <p>and update the grub bootloader using</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">update-grub
-</code></pre></div><p>and restart from disk.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>update-grub
+</span></span></code></pre></div><p>and restart from disk.</p>
 		</div>
 
 		<div class="post-tags">

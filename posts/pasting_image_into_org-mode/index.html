@@ -83,28 +83,28 @@ if (!doNotTrack) {
 		<div class="markdown">
 			<p>How to paste an image from the clipboard into an Emacs org-mode
 buffer. Requires `xclip` to be installed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#b58900">defvar</span> <span style="color:#268bd2">mfz/image-dir</span> <span style="color:#2aa198">&#34;Images&#34;</span>)
-
-(<span style="color:#b58900">defun</span> <span style="color:#268bd2">mfz/ensure-directory</span> (<span style="color:#268bd2">path</span>)
-  <span style="color:#2aa198">&#34;create directory if it does not exist and user agrees&#34;</span>
-  (<span style="color:#b58900">when</span> (<span style="color:#b58900">and</span> (<span style="color:#268bd2">not</span> (<span style="color:#268bd2">file-exists-p</span> <span style="color:#268bd2">path</span>))
-	   (<span style="color:#268bd2">y-or-n-p</span> (<span style="color:#268bd2">format</span> <span style="color:#2aa198">&#34;Directory %s does not exist. Create it?&#34;</span> <span style="color:#268bd2">path</span>)))
-    (<span style="color:#268bd2">make-directory</span> <span style="color:#268bd2">path</span> <span style="color:#b58900">:parents</span>)))
-
-(<span style="color:#b58900">defun</span> <span style="color:#268bd2">mfz/paste-image-clipboard</span> ()
-  <span style="color:#2aa198">&#34;Paste screenshot from clipboard&#34;</span>
-  (<span style="color:#b58900">interactive</span>)
-  (<span style="color:#268bd2">mfz/ensure-directory</span> (<span style="color:#268bd2">file-name-as-directory</span> <span style="color:#268bd2">mfz/image-dir</span>))
-  (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">image-path</span> (<span style="color:#268bd2">concat</span> (<span style="color:#268bd2">file-name-as-directory</span> <span style="color:#268bd2">mfz/image-dir</span>)
-			  (<span style="color:#268bd2">file-name-base</span> (<span style="color:#268bd2">buffer-name</span>))
-			  (<span style="color:#268bd2">format-time-string</span> <span style="color:#2aa198">&#34;_%Y_%m_%d__%H_%M_%S&#34;</span>)
-			  <span style="color:#2aa198">&#34;.png&#34;</span>)))
-    (<span style="color:#268bd2">shell-command-to-string</span> (<span style="color:#268bd2">format</span> <span style="color:#2aa198">&#34;xclip -selection clipboard -t image/png -o &gt; %s&#34;</span> <span style="color:#268bd2">image-path</span>))
-    (<span style="color:#268bd2">insert</span> <span style="color:#2aa198">&#34;[[file:&#34;</span> <span style="color:#268bd2">image-path</span> <span style="color:#2aa198">&#34;]]\n&#34;</span>)
-    (<span style="color:#268bd2">org-display-inline-images</span>)))
-</code></pre></div><p>In order to use image resizing, e.g. `#+attr_org: :width 300`, one needs to set</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-emacs-lisp" data-lang="emacs-lisp">(<span style="color:#b58900">setq</span> <span style="color:#268bd2">org-image-actual-width</span> <span style="color:#cb4b16">nil</span>)
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#b58900">defvar</span> <span style="color:#268bd2">mfz/image-dir</span> <span style="color:#2aa198">&#34;Images&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defun</span> <span style="color:#268bd2">mfz/ensure-directory</span> (<span style="color:#268bd2">path</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#2aa198">&#34;create directory if it does not exist and user agrees&#34;</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">when</span> (<span style="color:#b58900">and</span> (<span style="color:#268bd2">not</span> (<span style="color:#268bd2">file-exists-p</span> <span style="color:#268bd2">path</span>))
+</span></span><span style="display:flex;"><span>	   (<span style="color:#268bd2">y-or-n-p</span> (<span style="color:#268bd2">format</span> <span style="color:#2aa198">&#34;Directory %s does not exist. Create it?&#34;</span> <span style="color:#268bd2">path</span>)))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">make-directory</span> <span style="color:#268bd2">path</span> <span style="color:#b58900">:parents</span>)))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>(<span style="color:#b58900">defun</span> <span style="color:#268bd2">mfz/paste-image-clipboard</span> ()
+</span></span><span style="display:flex;"><span>  <span style="color:#2aa198">&#34;Paste screenshot from clipboard&#34;</span>
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">interactive</span>)
+</span></span><span style="display:flex;"><span>  (<span style="color:#268bd2">mfz/ensure-directory</span> (<span style="color:#268bd2">file-name-as-directory</span> <span style="color:#268bd2">mfz/image-dir</span>))
+</span></span><span style="display:flex;"><span>  (<span style="color:#b58900">let</span> ((<span style="color:#268bd2">image-path</span> (<span style="color:#268bd2">concat</span> (<span style="color:#268bd2">file-name-as-directory</span> <span style="color:#268bd2">mfz/image-dir</span>)
+</span></span><span style="display:flex;"><span>			  (<span style="color:#268bd2">file-name-base</span> (<span style="color:#268bd2">buffer-name</span>))
+</span></span><span style="display:flex;"><span>			  (<span style="color:#268bd2">format-time-string</span> <span style="color:#2aa198">&#34;_%Y_%m_%d__%H_%M_%S&#34;</span>)
+</span></span><span style="display:flex;"><span>			  <span style="color:#2aa198">&#34;.png&#34;</span>)))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">shell-command-to-string</span> (<span style="color:#268bd2">format</span> <span style="color:#2aa198">&#34;xclip -selection clipboard -t image/png -o &gt; %s&#34;</span> <span style="color:#268bd2">image-path</span>))
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">insert</span> <span style="color:#2aa198">&#34;[[file:&#34;</span> <span style="color:#268bd2">image-path</span> <span style="color:#2aa198">&#34;]]\n&#34;</span>)
+</span></span><span style="display:flex;"><span>    (<span style="color:#268bd2">org-display-inline-images</span>)))
+</span></span></code></pre></div><p>In order to use image resizing, e.g. `#+attr_org: :width 300`, one needs to set</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-emacs-lisp" data-lang="emacs-lisp"><span style="display:flex;"><span>(<span style="color:#b58900">setq</span> <span style="color:#268bd2">org-image-actual-width</span> <span style="color:#cb4b16">nil</span>)
+</span></span></code></pre></div>
 		</div>
 
 		<div class="post-tags">
